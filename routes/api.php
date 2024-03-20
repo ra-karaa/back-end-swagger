@@ -14,8 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\Api\AuthController;
-
 
 Route::patch('setting', [App\Http\Controllers\API\V1Controller::class, 'updateSetting']);
 Route::post('employees', [App\Http\Controllers\API\V1Controller::class, 'storeEmployees']);
