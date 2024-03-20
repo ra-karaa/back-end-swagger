@@ -63,8 +63,7 @@ return [
             ]) : [],
         ],
 
-        'pgsql' => [
-            'driver' => 'pgsql',
+        'pgsql' => [            
             'url' => 'postgres://default:NqSjImn9U0yf@ep-super-dawn-a7ot2nzp-pooler.ap-southeast-2.aws.neon.tech:5432/verceldb?sslmode=require',
             'host' => 'ep-super-dawn-a7ot2nzp-pooler.ap-southeast-2.aws.neon.tech',
             'port' => '5432',
