@@ -10,10 +10,11 @@
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
-    # Fix duplicate /api/ issue
-    RewriteRule ^api/(.*)$ /api/index.php?/$1 [L]
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
 
-    # Send Requests To API Front Controller if the URI starts with /api...
-    # This rule is no longer needed after the fix above
-    # RewriteRule ^api/.*$ /api/index.php [L]
+    # Fix Duplicate /api/ issue
+    RewriteRule ^api/(.*) /api/index.php/$1 [L]
 </IfModule>
