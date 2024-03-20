@@ -5,6 +5,63 @@
         "version": "0.1"
     },
     "paths": {
+        "/api/auth/login": {
+            "patch": {
+                "tags": [
+                    "Login"
+                ],
+                "summary": "Login",
+                "operationId": "f88fa769b024e9236472061f84950ffc",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "": {
+                                        "properties": {
+                                            "email": {
+                                                "type": "string"
+                                            },
+                                            "password": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                },
+                                "type": "object",
+                                "example": {
+                                    "email": "email",
+                                    "password": "password"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "name": {
+                                            "type": "string",
+                                            "example": "name"
+                                        },
+                                        "password": {
+                                            "type": "string",
+                                            "example": "password"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/api/setting": {
             "patch": {
                 "tags": [
@@ -305,6 +362,7 @@
         },
         "/": {
             "get": {
+                "operationId": "58658e34a5c8bd71c4a0afed6de10d20",
                 "responses": {
                     "200": {
                         "description": "Display Listing Project"
