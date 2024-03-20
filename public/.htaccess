@@ -20,6 +20,5 @@
     RewriteRule ^ index.php [L]
 
     # Send Requests To API Front Controller...
-    RewriteCond %{REQUEST_URI} !^/api/index.php
-    RewriteRule ^api/.*$ /api/index.php [L]
+    RewriteRule ^api/((?!index\.php).+)$ /api/index.php [L,NC]
 </IfModule>
