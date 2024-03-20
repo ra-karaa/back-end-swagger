@@ -13,6 +13,14 @@
         "APP_DEBUG": "true",
         "APP_URL": "https://yourproductionurl.com",
 
+        "DB_CONNECTION": "pgsql",
+        "DATABASE_URL": "postgres://default:NqSjImn9U0yf@ep-super-dawn-a7ot2nzp-pooler.ap-southeast-2.aws.neon.tech:5432/verceldb?sslmode=require",
+        "DB_HOST" : "ep-super-dawn-a7ot2nzp-pooler.ap-southeast-2.aws.neon.tech",
+        "DB_PORT" : "5432",
+        "DB_DATABASE" : "verceldb",
+        "DB_USERNAME" : "default",
+        "DB_PASSWORD" : "NqSjImn9U0yf",
+
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
