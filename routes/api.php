@@ -14,6 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+use App\Http\Controllers\API\AuthController;
+
+
+Route::group([
+    'middleware' => 'api',
+    'prefix' => 'auth'
+], function ($router) {
+    Route::post('login', [AuthController::class, 'login']);
+    Route::post('daftar', [AuthController::class, 'register']);
+    Route::post('refresh_token', [AuthController::class, 'refresh']);
+});
 
 Route::patch('setting', [App\Http\Controllers\API\V1Controller::class, 'updateSetting']);
 Route::post('employees', [App\Http\Controllers\API\V1Controller::class, 'storeEmployees']);
