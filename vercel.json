@@ -32,6 +32,6 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
 
-        "PHP_EXTENSIONS": ["pgsql"]
+        "PHP_EXTENSIONS": "pgsql"
     }
 }
