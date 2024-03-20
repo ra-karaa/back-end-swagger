@@ -10,7 +10,7 @@
         }
     ],
     "env": {
-        "APP_KEY":"base64:BorWzGrFQ4T38NrJYyJTTcy6OZNilz+lqdW7suh67cM=",
+        "APP_KEY": "base64:BorWzGrFQ4T38NrJYyJTTcy6OZNilz+lqdW7suh67cM=",
         "APP_NAME": "APPOINTMENT",
         "APP_ENV": "production",
         "APP_DEBUG": "true",
