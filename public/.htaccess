@@ -1,8 +1,4 @@
 <IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
-
     RewriteEngine On
 
     # Handle Authorization Header
@@ -19,6 +15,6 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 
-    # Send Requests To API Front Controller...
-    RewriteRule ^api/((?!index\.php).+)$ /api/index.php [L,NC]
+    # Send Requests To API Front Controller if the URI starts with /api...
+    RewriteRule ^api/.*$ /api/index.php [L]
 </IfModule>
