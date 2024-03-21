@@ -16,7 +16,7 @@
         "APP_DEBUG": "true",
         "APP_URL": "https://back-end-swagger-gyh6g5hla-rakaraas-projects.vercel.app/",
         "DB_URL" : "postgres://prbskdga:vb4O7dtSPUZ1clzR120QTlFVSfqkVn20@rosie.db.elephantsql.com/prbskdga",
-        "DB_CONNECTION": "pgsql",
+        "DB_CONNECTION": "mysql",
         "DB_HOST": "rosie",
         "DB_PORT": "5432",
         "DB_DATABASE": "prbskdga",
